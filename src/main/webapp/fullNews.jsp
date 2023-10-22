@@ -16,7 +16,7 @@
     <div class="container">
         <p>${fullNews}</p>
         <div>
-            <a href="/menu.jsp" class="btn btn-secondary">Go to menu</a>
+            <a href="news" class="btn btn-secondary">Go Back</a>
         </div>
     </div>
 

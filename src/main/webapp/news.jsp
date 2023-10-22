@@ -15,16 +15,16 @@
 </head>
 <body>
   <div class="container">
-    <form action="news" method="post">
       <c:forEach items="${news}" var="n">
+        <form action="news" method="post">
         <input type="hidden" name="newsId" value="${n.id}" />
         <p>ID: ${n.id}</p>
         <h1>${n.title}</h1>
         <img style="width: 150px" src="${n.imageUrl}" alt="photo-${title}" />
         <p>${n.shortDescription}</p>
         <input type="submit" class="btn btn-outline-primary" value="Read More" />
+        </form>
       </c:forEach>
-    </form>
 
     <div>
       <a href="menu.jsp" class="btn btn-secondary">Go to menu</a>
